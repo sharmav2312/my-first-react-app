@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Restaurant from './component/Restaurant';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// can return only one element
+   //<> short cut for React.Fragment
+   // all tags must be closed
+   // use camel case for attributes
+   // use props in {}
+   // <myName /> -- calling Nested component
+
+const App = () => {
+ return(
+   <>
+    <Restaurant />
+   </>
+ );
 }
 
-export default App;
+// Nested component
+// const MyName = () => {
+//   return <h1>Vishwas Sharma</h1>;
+// };
+
+// fat arrorw function
+
+// const App = () => {
+//   return React.createElement("h1", {}, "Hello World");
+// }
+
+export default App
